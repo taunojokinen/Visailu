@@ -67,7 +67,7 @@ public class Visailu {
         this.choiceD = choiceD;
     }
 
-
+    
 
 
 }
