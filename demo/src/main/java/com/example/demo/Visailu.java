@@ -7,16 +7,18 @@ public class Visailu {
     private String choiceB;
     private String choiceC;
     private String choiceD;
+    private String correctChoice;
 
 
-
-    public Visailu(String question, String answer, String choiceA, String choiceB, String choiceC, String choiceD) {
+    public Visailu(String question, String answer, String choiceA, String choiceB, String choiceC, String choiceD, String correctChoice) {
         this.question = question;
         this.answer = answer;
         this.choiceA = choiceA;
         this.choiceB = choiceB;
         this.choiceC = choiceC;
         this.choiceD = choiceD;
+        this.correctChoice = correctChoice;
+
     }
 
     public String getQuestion() {
@@ -65,6 +67,14 @@ public class Visailu {
 
     public void setChoiceD(String choiceD) {
         this.choiceD = choiceD;
+    }
+
+    public String getCorrectChoice() {
+        return this.correctChoice;
+    }
+
+    public void setCorrectChoice(String correctChoice) {
+        this.correctChoice = correctChoice;
     }
 
     
