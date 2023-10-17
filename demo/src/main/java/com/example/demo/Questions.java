@@ -14,7 +14,8 @@ public class Questions {
         "116 vuotta",
         "99 vuotta",
         "100 vuotta",
-        "150 vuotta"
+        "150 vuotta",
+        "A"
     ));
 
     questionList.add(new Visailu(
@@ -23,7 +24,8 @@ public class Questions {
         "Brasiliassa",
         "Chilessä",
         "Panamassa",
-        "Equadorissa"
+        "Equadorissa",
+        "D"
     ));
     
     questionList.add(new Visailu(
@@ -32,7 +34,8 @@ public class Questions {
         "Tammikuussa",
         "Syyskuussa",
         "Lokakuussa",
-        "Marraskuussa"
+        "Marraskuussa",
+        "D"
     ));
         
     questionList.add(new Visailu(
@@ -41,16 +44,18 @@ public class Questions {
         "Albert",
         "George",
         "Manuel",
-        "Jonas"
+        "Jonas",
+        "A"
     ));
 
     questionList.add(new Visailu(
-        "Question 4: Mistä eläimestä saivat Kanariansaaret nimensä?",
+        "Question 5: Mistä eläimestä saivat Kanariansaaret nimensä?",
         "Kanariansaaret sai nimensä hylkeistä . Canaria latinaksi tarkoittaa \"hylkeiden (=merikoirat) saari\"",
         "Kanarialinnusta",
         "Kengurusta",
         "Rotasta",
-        "Hylkeestä"
+        "Hylkeestä",
+        "D"
     ));
     return questionList;
     }
