@@ -4,15 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.Visailu;
 import com.example.demo.Questions;
 
 @RestController
 public class VisailuRestControllers {
+
+    String HelloWorld="Peli käynnistyy kanavalla localhost:8080/blondivisa. Blondivisassa" + 
+    "on 5 kysymystä ja voit vastata niihin lisäämällä parametrin answer, esim localhost:8080/blondivisa?answer=a" +
+    "";
+
     @GetMapping("/")
     public String Homepage(){
-        return ("Hello World");
+        return HelloWorld;
     }
     @GetMapping("/questions")
         public List<Visailu> getQuestions(){
@@ -40,9 +47,13 @@ public class VisailuRestControllers {
 
     }
 
-        @GetMapping("/blondivisa")
+        @GetMapping("/blondivisaAll")
         public List<Visailu> getQuestionsList(){
             return Questions.blondivisa();
+    }
+        @GetMapping("/blondivisa")
+    public String Answer(@RequestParam String answer){
+        return "answer = " + answer;
     }
     
 }
